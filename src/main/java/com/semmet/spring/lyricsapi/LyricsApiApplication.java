@@ -1,13 +1,13 @@
-package com.semmet.spring.lyricsgeniusapi;
+package com.semmet.spring.lyricsapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LyricsGeniusApiApplication {
+public class LyricsApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LyricsGeniusApiApplication.class, args);
+		SpringApplication.run(LyricsApiApplication.class, args);
 	}
 
 }
