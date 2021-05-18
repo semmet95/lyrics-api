@@ -1,2 +1,0 @@
-com/semmet/spring/lyricsgeniusapi/LyricsGeniusApiApplicationTests.java
- com.semmet.spring.lyricsgeniusapi.LyricsGeniusApiApplicationTests
