@@ -17,20 +17,18 @@ spec:
     spec:
       affinity:
         podAntiAffinity:
-          preferredDuringSchedulingIgnoredDuringExecution:
-          - weight: 100
-            podAffinityTerm:
-              labelSelector:
-                matchExpressions:
-                  - key: "app"
-                    operator: In
-                    values:
-                    - lyrics-api
-              topologyKey: "kubernetes.io/hostname"
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchExpressions:
+              - key: "app"
+                operator: In
+                values:
+                - lyrics-api
+            topologyKey: "kubernetes.io/hostname"
 
       containers:
         - name: lyrics-api
-          image: gcr.io/py-kubernetes-microservices/lyrics-api:v2
+          image: gcr.io/py-kubernetes-microservices/lyrics-api:v3
           ports:
             - containerPort: 8080
 
